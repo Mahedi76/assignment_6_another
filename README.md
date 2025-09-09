@@ -1,3 +1,4 @@
+
 1) Difference between var, let, and const:
 Answer: 
 var:  function-scoped, can be redeclared, can be updated.
