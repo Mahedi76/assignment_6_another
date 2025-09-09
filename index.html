@@ -79,5 +79,132 @@
 
     </section>
 </header>
+<main class="max-w-[1920px] mx-auto ">
+
+  <!-- Choose Your Trees Section -->
+<section class="p-[50px]  bg-[#f0fdf4]">
+  
+   <div class="flex flex-col md:flex-row min-h-screen">
+<!-- Sidebar Categories -->
+<aside class="w-60 bg-white shadow-md p-4">
+<h2 class="font-bold text-lg mb-4 flex items-center gap-2"> Categories</h2>
+<div id="category-container" class="flex flex-col gap-2"></div>
+</aside>
+
+
+<!-- Main Content -->
+<main class="flex-1 p-6">
+<div id="spinner" class="hidden text-center py-10">
+<span class="loading loading-spinner loading-lg text-success"></span>
+</div>
+<div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+</main>
+
+
+<!-- Cart Section -->
+<aside class="w-80 bg-white shadow-md p-4">
+<h2 class="font-bold text-lg mb-4 flex items-center gap-2"> Your Cart</h2>
+<div id="cart-container" class="flex flex-col gap-2"></div>
+<div class="border-t my-4"></div>
+<p class="font-semibold">Total: <span id="cart-total">৳0</span></p>
+<button class="btn btn-success w-full mt-4">Checkout</button>
+</aside>
+</div>
+
+
+
+<!-- Plant Details Modal -->
+<input type="checkbox" id="plant-modal" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <h3 id="modal-title" class="font-bold text-lg"></h3>
+    <img id="modal-img" class="w-full h-48 object-cover my-4 rounded" />
+    <p id="modal-desc" class="text-sm"></p>
+    <div class="modal-action">
+      <label for="plant-modal" class="btn">Close</label>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+    <!-- About the Campaign Section -->
+<section class=" bg-[#f0fdf4] py-[20px]">
+   <h2 class="mb-[50px] text-center text-[32px] font-semibold ">About the Campaign</h2>
+
+  <div class="flex flex-col md:flex-row mb-[20px] items-center justify-between max-w-[1090px] mx-auto">
+
+    <div class="mb-6 md:mb-0">
+      <img src="./assets/about.png" alt="">
+   </div>
+      
+   <div class="mr-[30px] text-[#1f2937] opacity-[0.8]">
+      <p class="mb-[10px] ">Green Earth is a global tree plantation initiative dedicated to fighting <br> climate change. Since our start, we’ve planted over 500,000 trees <br> worldwide. By joining our campaign, you help restore forests, create <br> habitats for wildlife, and combat global warming.</p>
+      
+        <div class="ml-[15px]">
+            <li>Restoration of natural habitats</li>
+        <li>Improvement of air quality</li>
+        <li>Support for local communities</li>
+        </div>
+     
+   </div>
+
+ </div>
+</section>
+
+
+<!-- Our Impact Section -->
+<section class="bg-[#cff0dc] p-[50px]">
+    <h2 class="text-center text-[32px] font-semibold mb-[40px]">Our Impact</h2>
+    <div class="flex flex-col md:flex-row justify-between gap-3 ">
+        <div class="bg-[#fff] rounded-[10px] px-[30px] py-[40px] shadow-[0_4px_8px_rgba(0,0,0,0.1)] w-full md:w-[516px] h-full md:h-[130px] text-center">
+           <h3 class="text-[32px] text-[rgba(21,128,61,1)] font-semibold ">500K+</h3>
+           <p class="opacity-80 ">Trees Planted</p>
+        </div>
+
+         <div class="bg-[#fff] rounded-[10px] px-[30px] py-[40px] shadow-[0_4px_8px_rgba(0,0,0,0.1)] w-full md:w-[516px] h-full md:h-[130px] text-center">
+           <h3 class="text-[32px] text-[rgba(21,128,61,1)] font-semibold">120+</h3>
+           <p class="opacity-80">Communities Involved</p>
+        </div>
+        <div class="bg-[#fff] rounded-[10px] px-[30px] py-[40px] shadow-[0_4px_8px_rgba(0,0,0,0.1)] w-full md:w-[516px] h-full md:h-[130px] text-center">
+            <h3 class="text-[32px] text-[rgba(21,128,61,1)] font-semibold opa">30+</h3>
+            <p class="opacity-80">Countries Reached</p>
+        </div> 
+    </div>
+
+
+</section>
+
+<!-- Plant a Tree Today Section -->
+<section class="bg-[#166534] p-[50px]">
+    <h2 class="text-center text-white text-[32px] font-semibold mb-8">Plant a Tree Today</h2>
+
+  
+  
+<div class="bg-green-700 rounded-lg shadow-lg p-10 w-full max-w-[448px] m-auto">
+     
+    <input type="text" placeholder="Your Name" class="w-full mb-3 p-3 rounded border bg-[#fff]" />
+    <input type="email" placeholder="Your Email Address" class="w-full mb-3 p-3 rounded border bg-[#fff]" />
+    
+    <select class="w-full mb-5 p-3 rounded border bg-[#fff]">
+      <option disabled selected>Number of Trees</option>
+      <option>1 Tree</option>
+      <option>5 Trees</option>
+      <option>10 Trees</option>
+    </select>
+
+  
+    
+    <button class="w-full bg-yellow-400 text-green-900 font-semibold py-3 rounded-full hover:bg-yellow-500 transition">
+      Donate Now
+    </button>
+  </div>
+
+
+</section>
+
+</main>
+
 </body>
 </html>
